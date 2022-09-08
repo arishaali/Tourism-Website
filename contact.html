@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <link rel="shortcut icon" href="images/icon.png" type="images/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Tourism | Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Tourism<span>.</span></a>
+        <div class="menutoggle active" onclick="togglemenu()">
+
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" onclick="togglemenu()">Home</a></li>
+            <li><a href="about.html" onclick="togglemenu()">About</a></li>
+            <li><a href="Packages.html" onclick="togglemenu()">Packages</a></li>
+            <li><a href="places.html" onclick="togglemenu()">Destinations</a></li>
+            <li><a href="blog.html" onclick="togglemenu()">Blog</a></li>
+            <li><a href="contact.html" onclick="togglemenu()" class="current">Contact Us</a></li>
+        </ul>
+
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2 style="font-family: cursive;" class="change">Travel With Us!</h2>
+        </div>
+    </section>
+    <div class="heading"><h1>CONTACT US</h1></div>
+    <div class="contact-container">
+        <div class="contact-row">
+          <div class="column1">
+            <h2>Get In Touch!</h2>
+            <h3>We Want To Hear From You.</h3>
+            <img src="images/mail.png" >
+          </div>
+          <div class="column2">
+            <form action="">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+              <label for="city">City</label>
+              <select id="cityy" name="city">
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Islamabad</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="sialkot">Sialkot</option>
+                <option value="hunza">Hunza</option>
+                <option value="faisalabad">Faisalabad</option>
+              </select>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit" name="save">
+            </form>
+          </div>
+        </div>
+      </div>
+
+        
+
+    <footer>
+        <div class="container-fluid bg-dark text-white">
+        <div class="div-container">
+
+            <div class="one">
+                <h3>TOURISM.</h3>
+                <p>Planning your trip has never been easier. <br>
+                    Now plan your perfect pakistan trip with TOURISM Website.</p>
+            </div>
+            <div class="two">
+                <p><i class="fas fa-phone"></i> +92 3456785</p>
+                <p><i class="far fa-envelope"></i> info@tourism.pk</p>
+
+            </div>
+            <div class="three">
+                <p>Follow Us On:</p>
+                <a href="#" id="one" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" id="two" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" id="three" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+
+        </div>
+
+        <div>
+            <p class="text-center">Tourism Website | Copyright &copy; 2021.</p>
+        </div>
+    </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        function togglemenu() {
+            const menutoggle = document.querySelector('.menutoggle');
+            menutoggle.classList.toggle('active');
+            const navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

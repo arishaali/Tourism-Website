@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <link rel="shortcut icon" href="images/icon.png" type="images/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Tourism | About Us</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Tourism<span>.</span></a>
+        <div class="menutoggle active" onclick="togglemenu()">
+
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" onclick="togglemenu()">Home</a></li>
+            <li><a href="about.html" onclick="togglemenu()" class="current">About</a></li>
+            <li><a href="Packages.html" onclick="togglemenu()">Packages</a></li>
+            <li><a href="places.html" onclick="togglemenu()">Destinations</a></li>
+            <li><a href="blog.html" onclick="togglemenu()">Blog</a></li>
+            <li><a href="contact.html" onclick="togglemenu()">Contact Us</a></li>
+        </ul>
+
+    </header>
+    <section class="banner" id="banner">
+        <div class="content" >
+            <h2 style="font-family: cursive;" class="change">Travel With Us!</h2>
+        </div>
+    </section>
+    <div class="heading">
+        <h1>ABOUT US</h1>
+    </div>
+   <div class="about">
+       <div class="about1">
+        <p>Tourism website is one of the exceptional and dependable tourism agency in Pakistan. To get into the travelling expedition, you’ve simply were given the proper option. We take you better to discover the unexpected splendor of Pakistan. As a Pakistan tourism agency, we added the exceptional possibilities to journey with engaging and super-relaxed services. So, get prepared for a adventure that you’ve by no means visible before!</p>
+        <p>We set up a completely exciting and exploratory adventure in your favored destinations. Whether you stay up for getting round all of the traveler spots of booked area or maybe need to consciousness its highlights to make the excursion short and rejoicing, each customer with more than one tour priorities is welcomed at Tourism website.</p>
+       </div>
+       <div class="about2">
+           <img src="images/travel.jpg" alt="">
+       </div>
+   </div>
+   <div class="heading">
+    <h1>OUR LEGACY</h1> </div>
+    <div class="about3">
+    <p>Tourism website is certainly considered one among Pakistan’s biggest excursion dealers and focuses on organizing excursions tailor-made to the unique interests, desires and necessities of each in and outbound client. The touism website head workplace is in Karachi, with branches in Islamabad, Lahore in addition to Hunza, and collectively we've got greater than 20 employees, who make certain that a huge variety of offerings are made to be had to all of our customers.
+    <br>
+    Tourism website has a crew of specialists who've been withinside the tourism enterprise for decades and who're extraordinarily decided to offer a extraordinary imaginative and prescient for visiting to all customers in order that they will enjoy the quality after which go back happy with our service. Tourism website control philosophy is primarily based totally at the easy idea of handing over the very best nice consumer offerings on the quality feasible price. Today we serve an ever developing quantity of customers, tour dealers and excursion operators across the world. All of our companions stay especially glad with our offerings, specially through the quantity of cost delivered offerings we've got on offer.</p>
+</div>
+
+
+        
+
+    <footer>
+        <div class="container-fluid bg-dark text-white">
+        <div class="div-container">
+
+            <div class="one">
+                <h3>TOURISM.</h3>
+                <p>Planning your trip has never been easier. <br>
+                    Now plan your perfect pakistan trip with TOURISM Website.</p>
+            </div>
+            <div class="two">
+                <p><i class="fas fa-phone"></i> +92 3456785</p>
+                <p><i class="far fa-envelope"></i> info@tourism.pk</p>
+
+            </div>
+            <div class="three">
+                <p>Follow Us On:</p>
+                <a href="#" id="one" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" id="two" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" id="three" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+
+        </div>
+
+        <div>
+            <p class="text-center">Tourism Website | Copyright &copy; 2021.</p>
+        </div>
+    </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        function togglemenu() {
+            const menutoggle = document.querySelector('.menutoggle');
+            menutoggle.classList.toggle('active');
+            const navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
