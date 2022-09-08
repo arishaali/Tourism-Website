@@ -1,5 +1,4 @@
 # Tourism-Website
-# El Frontend
 
 ## Project Setup
 
